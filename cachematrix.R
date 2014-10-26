@@ -17,8 +17,6 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Checks for a cached inversion of the given function, and returns it, otherwise calculating from the cached matrix.
 
 cacheSolve <- function(x, ...) {
-		##Import Required Package for Inversion MASS.
-		##require(MASS)
 		##Check for previously determined inversion m, returning current value if available.
 		m <- x$getinverse()
         if(!is.null(m)) {
